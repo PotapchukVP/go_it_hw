@@ -1,0 +1,232 @@
+/* @font-face {
+  font-family: Raleway-Regular;
+  src: url(../fonts/Raleway/Raleway-Medium.ttf);
+  src: url(../fonts/Raleway/Raleway-Regular.ttf);
+  src: url(../fonts/Roboto/Roboto-Medium.ttf);
+} */
+
+:root {
+  /* --logo-font-family: 'Raleway-Regular', sans-serif; */
+  --logo-font-family: 'Raleway', sans-serif;
+  --common-font: 'Roboto', sans-serif;
+  --link-color: #2196f3;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: var(--link-color);
+}
+
+body {
+  font-family: var(--common-font);
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.logo-style {
+  font-family: var(--logo-font-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: black;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.blue-logo-style {
+  color: var(--link-color);
+}
+
+/**********************************HEADER_STYLE**********************************/
+.header-background {
+  /* position: absolute;
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px; */
+  background: #ffffff;
+}
+
+.common-header-style {
+  /* position: absolute;
+  width: 72px;
+  height: 16px;
+  left: 548px;
+  top: 32px; */
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: #212121;
+}
+/**********************************HEADER_STYLE_END**********************************/
+
+/**********************************MAIN_STYLE**********************************/
+.effective-background {
+  /* position: absolute;
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px; */
+  background: #2f303a;
+}
+
+.effective-text-item {
+  font-family: inherit;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.order-button-style {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  letter-spacing: 0.06em;
+  color: #ffffff;
+
+  background: var(--link-color);
+  border-style: none;
+  cursor: pointer;
+}
+
+.about-head-text {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.body-text {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.main-text {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: #757575;
+}
+
+.name-text {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.job-title {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+
+  color: #757575;
+}
+
+/**********************************MAIN_STYLE_END**********************************/
+/**********************************FOOTER_STYLE***********************************/
+.footer-logo-style {
+  color: #ffffff;
+}
+.adress-text {
+  all: initial;
+  display: block;
+  font-family: var(--common-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.contact-text {
+  font-family: var(--common-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: #ffffff99;
+}
+
+.footer-background {
+  /* width: 1600px;
+  height: 252px; */
+  background: #2f303a;
+}
+/**********************************FOOTER_STYLE_END******************************/
+
+/**********************************PORTFOLIO_STYLE******************************/
+.filter-button-style {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.87;
+
+  letter-spacing: 0.06em;
+  color: #212121;
+
+  /* background: var(--link-color); */
+
+  background: #f5f4fa;
+  border-style: none;
+  cursor: pointer;
+}
+
+.name-project-text {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+
+  color: #212121;
+}
+
+.description-project-text {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
