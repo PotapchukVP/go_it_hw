@@ -10,20 +10,29 @@
   --logo-font-family: 'Raleway', sans-serif;
   --common-font: 'Roboto', sans-serif;
   --link-color: #2196f3;
+  --font-color: #212121;
+  --default-background-collor: #ffffff;
 }
 
 a {
   text-decoration: none;
 }
+
 a:hover,
 a:focus {
   color: var(--link-color);
 }
 
+.dot-list-hide {
+  list-style: none;
+}
+
 body {
   font-family: var(--common-font);
+  font-size: 14px;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: -var(--font-color);
+  background-color: var(--default-background-collor);
 }
 
 .visually-hidden {
@@ -64,12 +73,6 @@ body {
 }
 
 .common-header-style {
-  /* position: absolute;
-  width: 72px;
-  height: 16px;
-  left: 548px;
-  top: 32px; */
-
   font-family: inherit;
   font-weight: 500;
   font-size: 14px;
@@ -78,6 +81,11 @@ body {
 
   color: #212121;
 }
+
+.common-header-style.current {
+  color: red;
+}
+
 /**********************************HEADER_STYLE_END**********************************/
 
 /**********************************MAIN_STYLE**********************************/
@@ -111,7 +119,7 @@ body {
   letter-spacing: 0.06em;
   color: #ffffff;
 
-  background: var(--link-color);
+  background-color: var(--link-color);
   border-style: none;
   cursor: pointer;
 }
@@ -123,7 +131,9 @@ body {
   line-height: 1.16;
   text-align: center;
 }
-
+.our_team_background {
+  background-color: var(--default-background-collor);
+}
 .body-text {
   font-family: inherit;
   font-weight: 700;
@@ -195,13 +205,11 @@ body {
 
 /**********************************PORTFOLIO_STYLE******************************/
 .filter-button-style {
-  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.87;
 
   letter-spacing: 0.06em;
-  color: #212121;
 
   /* background: var(--link-color); */
 
@@ -210,19 +218,20 @@ body {
   cursor: pointer;
 }
 
+.filter-button-style:hover,
+.filter-button-style:focus {
+  color: white;
+  background-color: var(--link-color);
+}
+
 .name-project-text {
-  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
-
-  color: #212121;
 }
 
 .description-project-text {
-  font-family: inherit;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: calc(30 / 16);
